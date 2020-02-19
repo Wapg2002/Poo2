@@ -1,0 +1,524 @@
+
+package Trabajo_de_colecciones;
+
+public class Hospedaje {
+	
+	protected String tipo_hospedaje;
+	
+	protected Integer capacidad;
+	
+	protected float precio;
+	
+	protected Integer n_personas;
+	
+	protected Integer op;
+	
+	public Hospedaje() {
+		
+		
+	}
+	
+	public Hospedaje(String deku, Integer mirio, float todoroki, Integer Ingenium) {
+		
+		this.tipo_hospedaje = deku;
+		
+		this.capacidad = mirio;
+		
+		this.precio = todoroki;
+		
+		this.n_personas = Ingenium;
+		
+	}
+	
+	public String gettipo_hospedaje() {
+		
+		return this.tipo_hospedaje;
+		
+	}
+	
+	public void settipo_hospedaje(String nighteye) {
+		
+		this.tipo_hospedaje = nighteye;
+		
+	}
+
+	public float getPrecio() {
+		
+		return this.precio;
+		
+	}
+
+	public void setPrecio(float precio) {
+		
+		this.precio = precio;
+		
+	}
+	
+	public Integer getcapacidad() {
+		
+		return this.capacidad;
+		
+	}
+	
+	public void setcapacidad(Integer bakugou) {
+		
+		this.capacidad = bakugou;
+		
+	}
+
+	public Integer getN_personas() {
+		
+		return this.n_personas;
+		
+	}
+
+	public void setN_personas(Integer n_personas) {
+		
+		this.n_personas = n_personas;
+		
+	}
+
+	public Integer getOp() {
+		
+		return this.op;
+		
+	}
+
+	public void setOp(Integer op) {
+		
+		this.op = op;
+		
+	}
+	
+	
+	
+}
+
+package Trabajo_de_colecciones;
+
+public class Lavanderia {
+	
+	protected String codigo = "002";
+	
+	protected String descripci�n = "El servicio de lavanderia se cobra por d�a de servicio, el huesped tiene derecho a lavar m�ximo 3 veces por d�a de servicio";
+
+	protected float precio = (float)15000.00;
+	
+	public Lavanderia() {
+		
+		
+	}
+
+	public String getCodigo() {
+		
+		return this.codigo;
+		
+	}
+
+	public void setCodigo(String codigo) {
+		
+		this.codigo = codigo;
+		
+	}
+
+	public String getDescripci�n() {
+		
+		return this.descripci�n;
+		
+	}
+
+	public void setDescripci�n(String descripci�n) {
+		
+		this.descripci�n = descripci�n;
+		
+	}
+
+	public float getPrecio() {
+		
+		return this.precio;
+		
+	}
+
+	public void setPrecio(float precio) {
+		
+		this.precio = precio;
+		
+	}
+	
+}
+
+package Trabajo_de_colecciones;
+
+public class Servicios {
+	
+	protected String alimentacion = "Alimentaci�n no requerida";
+	
+	protected String lavanderia = "Lavanderia no requerida";
+	
+	protected String ba�o = "Ba�o privado no requerido";
+	
+	protected float descuento = 0;
+	
+	protected float preciot = 0;
+	
+	public Servicios() {
+		
+
+		
+	}
+	
+	public Servicios(String alimentacion, String la, String b, float pt, float des) {
+		
+		this.alimentacion = alimentacion;
+		
+		this.lavanderia = la;
+		
+		this.ba�o = b;
+		
+		this.preciot = pt;
+		
+		this.descuento = des;
+		
+	}
+	public String getAlimentacion() {
+		
+		return this.alimentacion;
+		
+	}
+
+	public void setAlimentacion(String alimentacion) {
+		
+		this.alimentacion = alimentacion;
+		
+	}
+
+	public String getLavanderia() {
+		
+		return this.lavanderia;
+		
+	}
+
+	public void setLavanderia(String lavanderia) {
+		
+		this.lavanderia = lavanderia;
+		
+	}
+
+	public String getBa�o() {
+		
+		return this.ba�o;
+		
+	}
+
+	public void setBa�o(String ba�o) {
+		
+		this.ba�o = ba�o;
+		
+	}
+
+	public float getDescuento() {
+		
+		return this.descuento;
+		
+	}
+
+	public void setDescuento(float descuento) {
+		
+		this.descuento = descuento;
+		
+	}
+
+	public float getPreciot() {
+		return preciot;
+	}
+
+	public void setPreciot(float preciot) {
+		this.preciot = this.preciot+preciot;
+	}
+	
+	
+
+}
+
+package Trabajo_de_colecciones;
+
+public class Alimentaci�n {
+	
+	protected String codigo = "001";
+	
+	protected String descripcion = "El servicio de alimentaci�n incluye las 3 comidas durante el d�a, el huesped puede armar su propio almuerzo en la barra de buffet del restaurante \nEl valor del servivio de alimentaci�n es por d�a, el precio final depender� de la cantidad de d�as que el servicio haya sido reservado";
+	
+	protected float precio = (float)25000.00;
+	
+	public Alimentaci�n() {
+		
+		
+	}
+	
+	public String getcodigo() {
+		
+		return this.codigo;
+		
+	}
+	
+	public void setcodigo(String codigo) {
+		
+		this.codigo = codigo;
+		
+	}
+
+	public String getDescripcion() {
+		
+		return this.descripcion;
+		
+	}
+
+	public void setDescripcion(String descripcion) {
+		
+		this.descripcion = descripcion;
+		
+	}
+
+	public float getPrecio() {
+		
+		return this.precio;
+		
+	}
+
+	public void setPrecio(float precio) {
+		
+		this.precio = precio;
+		
+	}
+
+}
+
+package Trabajo_de_colecciones;
+
+public class Ba�o_privado {
+	
+	protected String codigo = "003";
+	
+	protected String descripcion = "El ba�o privado tiene un costo por d�a, al huesped se le entrega la llave de dicho ba�o para que solo �l huesped tenga acceso al ba�o";
+
+	protected float precio = (float)7000.00;
+	
+	public Ba�o_privado() {
+		
+		
+	}
+
+	public String getCodigo() {
+		
+		return this.codigo;
+		
+	}
+
+	public void setCodigo(String codigo) {
+		
+		this.codigo = codigo;
+		
+	}
+
+	public String getDescripcion() {
+		
+		return this.descripcion;
+		
+	}
+
+	public void setDescripcion(String descripcion) {
+		
+		this.descripcion = descripcion;
+		
+	}
+
+	public float getPrecio() {
+		
+		return this.precio;
+		
+	}
+
+	public void setPrecio(float precio) {
+		
+		this.precio = precio;
+		
+	}
+	
+}
+
+
+/////mAIN
+
+package Trabajo_de_colecciones_main;
+
+import Trabajo_de_colecciones.*;
+
+import java.util.Scanner;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+public class main {
+	
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		Hospedaje h = new Hospedaje();
+		
+		Servicios s = new Servicios();
+		
+		Alimentaci�n a = new Alimentaci�n();
+		
+		Ba�o_privado b = new Ba�o_privado();
+		
+		Lavanderia l = new Lavanderia();
+		
+		List<Servicios> servi = new ArrayList<>();
+		
+		List<Hospedaje> hospe = new ArrayList<>();
+		
+		do {
+			
+		
+			do {
+		
+				System.out.println("Hola, bienvenido al hostal chirrete, acontinuaci�n vamos a hacer tu reserva.");
+		
+				System.out.println("\n******Tipo de hospedaje***** \nD�gita 1 si deseas alquilar una habitaci�n privada y 2 si deseas alquilar un camarote");
+		
+			
+			
+				h.setOp(in.nextInt());
+			
+					switch(h.getOp()) {
+		
+						case 1:
+				
+							h.settipo_hospedaje("Habitaci�n privada");
+						
+							h.setcapacidad(2);
+				
+							h.setPrecio((float)50000.00);
+					
+							h.setOp(1);
+			
+							break;
+			
+						case 2:
+				
+							h.settipo_hospedaje("Camarote");
+						
+							h.setcapacidad(1);
+				
+							h.setPrecio((float)20000.00);
+						
+							h.setOp(2);
+				
+							break;
+			
+						default: 
+				
+							System.out.println("Por favor escoge una opci�n v�lida");
+				
+					}
+		
+				}while(h.getOp() != 1 && h.getOp() != 2);
+			
+				do{
+					System.out.println("*****Cantidad de personas***** \nD�gita la cantidad de personas que desean hospedarse");
+				
+					h.setN_personas(in.nextInt());
+				
+					if(h.getN_personas() > h.getcapacidad()) {
+					
+						System.out.println("Lo sentimos, la capacidad l�mite de tu "+ h.gettipo_hospedaje()+" es de "+h.getcapacidad()+" personas");
+					
+					}
+					
+				}while(h.getN_personas() > h.getcapacidad());
+				
+				System.out.println("�Desea agregar un servicio a su reserva? \nD�gite 1 para s� y 2 para no");
+			
+				if(in.nextInt() == 1) {
+				
+					do {
+				
+						System.out.println("�Qu� servicios desea adquirir? \n1)alimentaci�n \n2)Lavanderia \n3)Ba�o privado?");
+				
+						switch(in.nextInt()) {
+				
+							case 1:
+						
+								s.setAlimentacion("Alimentaci�n requerida");
+								
+								s.setPreciot(a.getPrecio());
+					
+								break;
+					
+							case 2:
+						
+								s.setLavanderia("Lavanderia requerida");
+								
+								s.setPreciot(l.getPrecio());
+						
+								break;
+					
+							case 3:
+						
+								s.setBa�o("Ba�o privado requerido");
+								
+								s.setPreciot(b.getPrecio());
+							
+								break;
+						
+						}
+						
+						System.out.println("�desea continuar?, d�gite 1 para s� y 2 para no");
+						
+					}while(in.nextInt() == 1);
+				
+				}
+				
+				if(h.gettipo_hospedaje() == "Camarote") {
+					
+					
+					s.setDescuento((float) (s.getPreciot()*0.05));
+					
+				}
+			
+				Servicios s1 = new Servicios(s.getAlimentacion(), s.getLavanderia(), s.getBa�o(), s.getPreciot(), s.getDescuento());
+			
+				System.out.println(s1.getAlimentacion()+","+s1.getLavanderia()+","+ s1.getBa�o()+","+s1.getPreciot()+","+s1.getDescuento());
+			
+				servi.add(s1);
+			
+				Hospedaje h1 = new Hospedaje(h.gettipo_hospedaje(), h.getcapacidad(), h.getPrecio(), h.getN_personas());
+			
+				hospe.add(h1);	
+				
+				System.out.println("�Desea continuar? \nD�gite 1 para s� y 2 para no");
+				
+		}while(in.nextInt()== 1);
+		
+		for(Hospedaje ho: hospe) {
+			
+			System.out.println(ho.gettipo_hospedaje()+" "+ ho.getcapacidad()+" "+ho.getPrecio()+" "+ ho.getN_personas());
+			
+		}
+		
+		
+		
+		for(Servicios se: servi) {
+			
+			System.out.println(se.getAlimentacion()+" "+se.getLavanderia()+" "+se.getBa�o()+" "+se.getPreciot()+" "+se.getDescuento());
+			
+		}
+		
+	}
+		
+		
+}
+
+
