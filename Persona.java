@@ -1,61 +1,59 @@
-package Taller_Colecciones;
+package Parcial;
 
-public abstract class Persona {
+public class Persona {
 	
-	protected String name;
+	private String nombre;
 	
-	protected Integer age;
+	private String edad;
 	
-	protected Integer documento;
+	private String numeroTelefono;
 	
-	protected String id;
+	private int documento;
 	
-	protected String pass;
-	
-	protected Integer nota;
-	
-	protected String id2;
-	
-	protected String pass2;
-	
-	public Persona() {
+	public Persona(String name, String age, String numberphone, int id) {
+		
+		this.nombre = name;
+		
+		this.edad = age;
+		
+		this.numeroTelefono = numberphone;
+		
+		this.documento = id;
 		
 	}
-	
-	public Persona(String name, Integer age, Integer documento, String id, String password){
-		
-		this.name = name;
-		
-		this.age = age;
-		
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getEdad() {
+		return edad;
+	}
+
+	public void setEdad(String edad) {
+		this.edad = edad;
+	}
+
+	public String getNumeroTelefono() {
+		return numeroTelefono;
+	}
+
+	public void setNumeroTelefono(String numeroTelefono) {
+		this.numeroTelefono = numeroTelefono;
+	}
+
+	public int getDocumento() {
+		return documento;
+	}
+
+	public void setDocumento(int documento) {
 		this.documento = documento;
-		
-		this.id = id;
-		
-		this.pass = password;
-		
 	}
 	
-	public abstract String acceso(String id, String password);
 	
-	public abstract String getName();
-	
-	public abstract void setName(String name);
-	
-	public abstract Integer getAge();
-	
-	public abstract void setAge(Integer age);
-	
-	public abstract Integer getDocumento();
-	
-	public abstract void setDocumento(Integer documento);
-	
-	public abstract String getId();
-	
-	public abstract void setId(String id);
-	
-	public abstract String getPass();
-	
-	public abstract void setPass(String pass);
-	
+
 }
